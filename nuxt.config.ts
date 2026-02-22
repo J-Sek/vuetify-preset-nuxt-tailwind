@@ -30,6 +30,12 @@ export default defineNuxtConfig({
     transpile: ['vuetify'],
   },
 
+  vite: {
+    build: {
+      cssMinify: 'lightningcss', // switch to 'esbuild' if ssr: true
+    },
+  },
+
   vuetify: {
     moduleOptions: {
       disableVuetifyStyles: true,
